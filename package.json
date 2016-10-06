@@ -1,6 +1,6 @@
 {
   "name": "mirage",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "./lib/main",
   "description": "Explore and open files in the current project.",
   "repository": "https://github.com/learn-co/mirage",
@@ -14,7 +14,7 @@
     "event-kit": "^1.0.0",
     "fs-plus": "^2.3.0",
     "minimatch": "~0.3.0",
-    "nsync-fs": "learn-co/nsync-fs#master",
+    "test-nsync-fs": "0.0.1",
     "pathwatcher": "^6.2",
     "temp": "~0.8.1",
     "underscore-plus": "^1.0.0"
