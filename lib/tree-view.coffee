@@ -1,11 +1,11 @@
 path = require 'path'
-{shell} = require 'nsync-fs'
+{shell} = require 'test-nsync-fs'
 
 _ = require 'underscore-plus'
 {BufferedProcess, CompositeDisposable} = require 'atom'
 {repoForPath, getStyleObject, getFullExtension} = require "./helpers"
 {$, View} = require 'atom-space-pen-views'
-{fs} = require 'nsync-fs'
+{fs} = require 'test-nsync-fs'
 
 AddDialog = null  # Defer requiring until actually needed
 MoveDialog = null # Defer requiring until actually needed

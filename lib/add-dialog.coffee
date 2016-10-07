@@ -1,5 +1,5 @@
 path = require 'path'
-{fs} = require 'nsync-fs'
+{fs} = require 'test-nsync-fs'
 Dialog = require './dialog'
 {repoForPath} = require './helpers'
 

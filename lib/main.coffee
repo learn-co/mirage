@@ -3,7 +3,7 @@ path = require 'path'
 
 FileIcons = require './file-icons'
 
-virtualFileSystem = require 'nsync-fs'
+virtualFileSystem = require 'test-nsync-fs'
 
 module.exports =
   treeView: null
