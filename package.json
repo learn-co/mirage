@@ -1,6 +1,6 @@
 {
   "name": "mirage",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "./lib/main",
   "description": "Explore and open files in the current project.",
   "repository": "https://github.com/learn-co/mirage",
