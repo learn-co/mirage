@@ -14,7 +14,7 @@ class Directory
     @emitter = new Emitter()
     @subscriptions = new CompositeDisposable()
 
-    if atom.config.get('learn-ide-tree.squashDirectoryNames') and not @isRoot
+    if atom.config.get('mirage.squashDirectoryNames') and not @isRoot
       fullPath = @squashDirectoryNames(fullPath)
 
     @path = fullPath
@@ -103,11 +103,11 @@ class Directory
 
   # Is the given path ignored?
   isPathIgnored: (filePath) ->
-    if atom.config.get('learn-ide-tree.hideVcsIgnoredFiles')
+    if atom.config.get('mirage.hideVcsIgnoredFiles')
       repo = repoForPath(@path)
       return true if repo? and repo.isProjectAtRoot() and repo.isPathIgnored(filePath)
 
-    if atom.config.get('learn-ide-tree.hideIgnoredNames')
+    if atom.config.get('mirage.hideIgnoredNames')
       for ignoredPattern in @ignoredPatterns
         return true if ignoredPattern.match(filePath)
 
@@ -214,7 +214,7 @@ class Directory
     normalizedValue
 
   sortEntries: (combinedEntries) ->
-    if atom.config.get('learn-ide-tree.sortFoldersBeforeFiles')
+    if atom.config.get('mirage.sortFoldersBeforeFiles')
       combinedEntries
     else
       combinedEntries.sort (first, second) =>

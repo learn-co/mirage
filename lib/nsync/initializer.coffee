@@ -175,7 +175,7 @@ module.exports = helper = (activationState) ->
         onEditorSave(e)
 
     atomHelper.on 'learn-ide:logout', ->
-      pkg = atom.packages.loadPackage('learn-ide-tree')
+      pkg = atom.packages.loadPackage('mirage')
       pkg.mainModule.preventCache = true
       nsync.flushCache()
 
