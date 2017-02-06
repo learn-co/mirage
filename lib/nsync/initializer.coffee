@@ -8,6 +8,8 @@ atomHelper = require './atom-helper'
 executeCustomCommand = require './custom-commands'
 {CompositeDisposable} = require 'event-kit'
 
+console.log 'THIS IS A NEW VERSION OF TREE VIEW. COOL.'
+
 require('dotenv').config
   path: _path.join(__dirname, '..', '..', '.env')
   silent: true
