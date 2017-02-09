@@ -1,15 +1,15 @@
 {
-  "name": "learn-ide-tree",
-  "version": "1.0.21",
+  "name": "mirage",
+  "version": "1.0.25",
   "upstreamVersion": "0.213.1",
   "main": "./lib/main",
-  "description": "A Tree View replacement for the Learn IDE",
-  "repository": "https://github.com/learn-co/learn-ide-tree",
+  "description": "The learn-ide-tree's twin that we use for testing",
+  "repository": "https://github.com/learn-co/mirage",
   "license": "MIT",
   "engines": {
     "atom": "*"
   },
-  "primaryLearnIDEPackage": "learn-ide",
+  "primaryLearnIDEPackage": "mastermind",
   "private": true,
   "dependencies": {
     "atom-space-pen-views": "^2.1.1",

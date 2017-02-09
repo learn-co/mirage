@@ -19,7 +19,7 @@
   {
     'label': 'Packages'
     'submenu': [
-      'label': 'Learn IDE Tree'
+      'label': 'Mirage'
       'submenu': [
         { 'label': 'Focus', 'command': 'tree-view:toggle-focus' }
         { 'label': 'Toggle', 'command': 'tree-view:toggle' }
