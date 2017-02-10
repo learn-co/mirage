@@ -10,6 +10,7 @@ module.exports =
   treeView: null
 
   activate: (@state) ->
+    console.log('COOL. NEW')
     treeViewisDisabled = localStorage.disableTreeView is 'true'
 
     if not treeViewisDisabled
